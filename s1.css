@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Tektur:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Mr+Dafoe&family=Pacifico&family=Playfair+Display:wght@500&family=Salsa&family=Tektur:wght@900&display=swap');
+* 
+{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body
+{
+        /* padding: 1rem; */
+        margin: 0.1rem;
+        min-width: 375px;
+        background-color: rgb(4, 4, 77);
+}
+    
+.main_div 
+{
+        padding: 2rem;
+        min-height: 100vh;
+        width: 100%;
+        border-radius: 25px;
+        background-image: linear-gradient(to right, #c41b1b, #b32eac, #18b8ad);
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+    
+.first 
+{
+        width: 100%;
+        max-width: calc(35% - 1rem); /* Adjust the width and gap as needed */
+        border-radius: 2rem;
+        margin-bottom: 1rem; /* Add margin between the two sections */
+}
+.second 
+{
+        width: 100%;
+        max-width: calc(65% - 1rem); /* Adjust the width and gap as needed */
+        border-radius: 2rem;
+        margin-bottom: 1rem; /* Add margin between the two sections */
+}
+    
+.first 
+{
+        background-image: linear-gradient(to right, rgb(82, 79, 79), #000000);
+}
+    
+.gaurav, .profile
+{
+        /* background: linear-gradient(to right, #820078, #818400); */
+        background: linear-gradient(to right, #820078, #818400);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-family: 'Mr Dafoe', cursive;
+        font-family: 'Tektur', sans-serif;
+}
+    
+.second 
+{
+        background-image: linear-gradient(to right, #000000, rgb(63, 61, 61));
+}
+    
+.sec-div 
+{
+        min-width: 5rem;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 1rem;
+        justify-content: space-evenly;
+        height: auto; /* Adjust the height as needed */
+}
+    
+    /* Adjust the position of individual details */
+.name { margin-left: 1.5rem; }
+.age { margin-left: 2.5rem; }
+.mob { margin-left: 1rem; }
+.email { margin-left: 1.5rem; }
+.add { margin-left: 0.7rem; }
+
+
+.text 
+{
+        color: white;
+        font-family: 'Amita', serif;
+        font-family: 'Mr Dafoe', cursive;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Salsa', cursive;
+        font-family: 'Tektur', sans-serif;
+}
+    
+@media screen and (max-width: 1000px) 
+{
+        .first, .second 
+        {
+                max-width: 100%; /* On smaller screens, each section takes full width */
+        }    
+}
